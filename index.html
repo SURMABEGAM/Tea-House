@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <!-- Tailwind CSS CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <!-- Font Awesome CDN -->
+      <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+</head>
+<body></body>  
+<!-- Navbar -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+        <!-- Logo -->
+        <a href="#" class="text-3xl font-bold text-orange-500">
+            Tea <span class="text-black">House</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center gap-8 font-medium">
+
+            <li>
+                <a href="#" data-lang="home" class="hover:text-orange-500 transition">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#" data-lang="about" class="hover:text-orange-500 transition">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#" data-lang="products" class="hover:text-orange-500 transition">
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="#" data-lang="contact" class="hover:text-orange-500 transition">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-3">
+
+            <!-- Language -->
+            <select id="languageSelect"
+                class="border rounded-lg px-3 py-2 text-sm outline-none">
+
+                <option value="en">English</option>
+                <option value="bn">বাংলা</option>
+                <option value="hi">हिन्दी</option>
+                <option value="ar">العربية</option>
+
+            </select>
+
+            <!-- Theme -->
+            <button id="themeToggle"
+                class="w-10 h-10 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition">
+
+                🌙
+
+            </button>
+
+            <!-- Mobile Menu -->
+            <button id="menuBtn"
+                class="md:hidden text-3xl">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-lg">
+
+        <ul class="flex flex-col p-5 gap-4">
+
+            <li><a href="#" data-lang="home">Home</a></li>
+
+            <li><a href="#" data-lang="about">About</a></li>
+
+            <li><a href="#" data-lang="products">Products</a></li>
+
+            <li><a href="#" data-lang="contact">Contact</a></li>
+
+        </ul>
+
+    </div>
+
+</header>
+</html>
