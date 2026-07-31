@@ -8,3 +8,10 @@
   font-weight: 400;
   font-style: normal;
 }
+.hero{
+  backdrop-filter: blur(18px);
+
+background: rgba(255,255,255,.25);
+
+border:1px solid rgba(255,255,255,.3);
+}
