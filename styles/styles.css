@@ -33,18 +33,27 @@ border:1px solid rgba(255,255,255,.3);
     );
 }
 
-@keyframes float{
-
-0%{
-transform:translateY(0);
+html{
+scroll-behavior:smooth;
+transition:.35s;
 }
 
-50%{
-transform:translateY(-18px);
+body{
+transition:
+background .35s,
+color .35s;
 }
 
-100%{
-transform:translateY(0);
+html.light{
+
+background:#FFFDF8;
+color:#1F2937;
+
 }
+
+html.dark{
+
+background:#0F172A;
+color:white;
 
 }
